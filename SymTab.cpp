@@ -23,7 +23,7 @@ SymbolList SymTab :: exitScope()
     SymbolList t = head->info;
     head = head->next;
     string name = names->info;
-    if (HW == 4)
+    if (HW == 4 || HW == 5)
     {
         cout << "*** Exit Scope " << name << " ***" << endl;
         putSymbolList(cout, t);
